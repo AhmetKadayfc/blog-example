@@ -1,0 +1,261 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 30px;
+    border: 2px solid #444;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    color: #444;
+    padding: 10px 25px;
+    border: 2px solid #444;
+    border-radius: 25px;
+}
+
+.contact-btn i, .details-btn i {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    transition: padding-left 0.3s;
+}
+
+.contact-btn:hover i, .details-btn:hover i {
+    padding-left: 5px;
+    transition: padding-left 0.3s;
+}
+
+/* Mobile Navigation - Hidden by default */
+.mobile-nav {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px;
+    border: 2px solid #444;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #444;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #444;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 14px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.details-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 10px;
+    float: right;
+    background-color: #fff;
+    color: #444;
+    text-decoration: none;
+    padding: 12px 30px;
+    border: 2px solid #444;
+    border-radius: 25px;
+}
+
+
+/* Blog Section */
+.blog-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog-grid {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.blog-card {
+    flex-grow: 1;
+    border: 2px solid #444;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.blog-image {
+    width: 100%;
+    height: 100px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    color: #888;
+    font-size: 12px;
+}
+
+.view-all {
+    color: #444;
+    font-size: 16px;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px dotted #444;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    /* Hide desktop nav, show mobile nav */
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        position: sticky;
+        top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        background: none;
+        border: 2px solid #444;
+        color: #444;
+        background-color: #fff;
+        font-size: 24px;
+        padding: 8px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /* Hero Section - Stack vertically */
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        display: none;
+    }
+
+    .hero-content a {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .profile-image img{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+
+    /* Blog Grid - Single column */
+    .blog-section {
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .blog-grid {
+        width: 100%;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+}

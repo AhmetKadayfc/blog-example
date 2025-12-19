@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>All Blogs</title>
+</head>
+
+<body>
+    <nav class="simple-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">Blog</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="blogs.html" class="active">All Blogs</a>
+                <span id="authNav"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>All Blogs</h1>
+            <button id="createBlogBtn" class="btn-primary" style="display: none;">
+                Create New Blog
+            </button>
+        </div>
+
+        <div id="blogsContainer" class="blogs-list">
+            <p class="loading">Loading blogs...</p>
+        </div>
+    </main>
+
+    <script src="../js/api/client.js"></script>
+    <script src="../js/pages/blogs.js"></script>
+</body>
+
+</html>

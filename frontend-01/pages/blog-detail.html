@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Blog Detail</title>
+</head>
+
+<body>
+    <nav class="simple-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">Blog</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="blogs.html">All Blogs</a>
+                <span id="authNav"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div id="loadingMessage" class="loading">Loading blog...</div>
+        <div id="errorMessage" class="error-message"></div>
+
+        <article id="blogDetail" class="blog-detail" style="display: none;">
+            <header class="blog-detail-header">
+                <h1 id="blogTitle" class="blog-detail-title"></h1>
+                <div class="blog-detail-meta">
+                    <p id="blogAuthor" class="blog-detail-author"></p>
+                    <p id="blogDate" class="blog-detail-date"></p>
+                    <span id="blogStatus" class="blog-status"></span>
+                </div>
+            </header>
+
+            <div id="blogContent" class="blog-detail-content"></div>
+
+            <div id="blogActions" class="blog-detail-actions" style="display: none;">
+                <button id="editBtn" class="btn-primary">Edit Blog</button>
+                <button id="deleteBtn" class="btn-delete">Delete Blog</button>
+            </div>
+
+            <div class="blog-detail-footer">
+                <a href="blogs.html" class="btn-secondary">← Back to All Blogs</a>
+            </div>
+        </article>
+    </main>
+
+    <script src="../js/api/client.js"></script>
+    <script src="../js/pages/blog-detail.js"></script>
+</body>
+
+</html>
