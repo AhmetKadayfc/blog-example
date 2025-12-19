@@ -1,6 +1,6 @@
-# Frontend-01 - Vanilla JavaScript Blog Application
+# Frontend-01 - JavaScript Blog Application
 
-A blog application built with vanilla HTML, CSS, and JavaScript featuring user authentication and CRUD operations for blog posts.
+A blog application built with HTML, CSS, and JavaScript featuring user authentication and CRUD operations for blog posts.
 
 ## 📁 Project Structure
 

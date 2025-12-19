@@ -29,7 +29,6 @@ The app will be available at `http://localhost:3000`
 - React 18
 - React Router 6
 - Vite
-- Vanilla CSS
 
 ## Backend
 
