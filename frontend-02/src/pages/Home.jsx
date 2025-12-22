@@ -35,17 +35,7 @@ function Home() {
 
     return (
         <>
-            <nav className="desktop-nav">
-                <div className="nav-links">
-                    <Link to="/" className="active">Home</Link>
-                    <a href="#">About me</a>
-                    <Link to="/blogs">Blog</Link>
-                    <a href="#">Projects</a>
-                </div>
-                <a href="#contact" className="contact-btn">
-                    <span>Contact</span> <i className="fa-solid fa-chevron-right"></i>
-                </a>
-            </nav>
+            <Navbar></Navbar>
 
             <section className="hero">
                 <div className="profile-image">
